@@ -1,77 +1,95 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-    font-family: 'Poiret One', cursive;
-    background: radial-gradient(circle, #ff80ab, #ff4081);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Poiret One', cursive;
+  background: radial-gradient(circle, #ff80ab, #ff4081);
+}
+
+#birthday-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#iphone-frame {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  border-radius: 50px;
+  border: 15px solid #000;
+  background: white;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#image-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+  /* opacity: 0.5; */
+}
+
+#image-slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  transition: transform 0.8s ease;
+}
+
+.message {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+}
+
+.message h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.message h3 {
+  font-size: 1.8rem;
+}
+
+#confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.confetti-icon {
+  font-size: 2rem;
+  position: absolute;
+  top: -100px;
+  animation: fall infinite linear;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
   }
-  
-  #birthday-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  100% {
+    transform: translateY(110vh);
   }
-  
-  #confetti {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-  
-  #image-slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    z-index: 2;
-  }
-  
-  #image-slider img {
-    max-width: 200px;
-    margin: 0 10px;
-    transition: transform 0.5s ease;
-  }
-  
-  .message {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #fff;
-    z-index: 3;
-  }
-  
-  .message h1 {
-    font-size: 4rem;
-    margin: 0;
-  }
-  
-  .message h3 {
-    font-size: 1.8rem;
-  }
-  
-  .confetti-icon {
-    font-size: 2rem;
-    position: absolute;
-    top: -100px;
-    animation: fall infinite linear;
-  }
-  
-  @keyframes fall {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(110vh);
-    }
-  }
-  
+}
