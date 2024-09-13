@@ -80,14 +80,12 @@ imageSlider.addEventListener('touchend', (e) => {
   showNextImage();
 });
 
-function loadBackgroundMusic() {
-  const audio = new Audio('music/music.mp3'); 
-  audio.loop = true; 
-  audio.autoplay = true; 
-  audio.volume = 0.5; 
-  document.body.appendChild(audio);
+function play(){
+  var audio = document.getElementById('audio-annette');
+  document.getElementById('button-container').style.display='none'
+  document.getElementById('birthday-container').style.display='block'
+  audio.play();
 }
 
 generateConfetti();
-generateImageSlider();
-// loadBackgroundMusic(); 
+generateImageSlider(); 

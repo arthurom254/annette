@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <div id="birthday-container">
+  <div id="button-container">
+    <button id="start-button" onclick="play()">Start Celebration</button>
+  </div>  
+  <div id="birthday-container" style="display: none;">
     <div id="iphone-frame">
       <div id="image-slider"></div>
     </div>
@@ -21,12 +23,7 @@
       <h3>On September 16, 2024</h3>
     </div>
   </div>
-
-  <audio autoplay loop>
-    <source src="music/music.mp3" type="audio/mp3">
-    Your browser does not support the audio.
-  </audio>
-
+  <audio id="audio-annette" src="https://annette.shahibu.com/music/music.mp3" loop></audio>
   <script src="script.js"></script>
 </body>
 </html>
