@@ -1,8 +1,13 @@
 const imageUrls = [
-  "https://lh3.googleusercontent.com/pw/AP1GczOPhKzm_mxDpedrZd-x2yAZNrJ2JN-Uxg9Nu_aZCR9S1y_QJQ4JpN-sKamsJBpSxfu0Ifoid97_NrPiTDgmuQf1D_J_-g0Af6TJ7A52r93U18GQ_IoescG5iGK1U7NnhgAmrt7uMYjN2uQ05B5mRS3I=w487-h649-s-no?authuser=0",
-  "https://lh3.googleusercontent.com/pw/AP1GczNHpy9X_wFexM62OZeoTZwxdOwJR0Mn6tQgpJCMsvvLe_eS5jOk2RMcEAKATgeqirQLYC1LLKf-_sBgSgnmbt-mRf-cKPGwa0JdTw_K4jUmPDVsSStast7mUwRMjezQEiq7kdBKgOPHjyXcOIWCKN21=w487-h649-s-no?authuser=0",
-  "https://lh3.googleusercontent.com/pw/AP1GczNZKDKWjtTAQ3rcfp-iovOROajHthgmo2713SIbYYgLCOeZCpCaBYaZh1bCvoJANEBvPGifzMw32vTFD4Sl-WbBH1EAjhXAdrnoc4mQXO0aBwySgANFepaIutZ5XeIHN--V671Ggg97Sa9TtwuVa5ZR=w487-h649-s-no?authuser=0",
-  "https://lh3.googleusercontent.com/pw/AP1GczO4I1T1lNzwAGxNaqCAQBbrP0wzTA9A5YeGq5qSz_Td9Um0YnO8oFYBDo6L-Cxb3zlnZn85R7SV9XdrLItXGMa4ReXPkj0S_ykco8UlZ-CN10ZjjY5lU4WHeNGYJ-qaqoR-yRtmBKlUFqtL_eIEvmwR=w487-h649-s-no?authuser=0"
+  "1.jpg",
+  "2.jpg",
+  "3.jpg",
+  "4.jpg",
+  "5.jpg",
+  "6.jpg",
+  "7.jpg",
+  "8.jpg",
+  "9.jpg"
 ];
 
 const confettiIcons = ['fas fa-ribbon', 'fas fa-heart', 'fas fa-candy-cane', 'fas fa-crown', 'fas fa-birthday-cake', 'fas fa-star', 'fas fa-music'];
